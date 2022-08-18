@@ -1,18 +1,12 @@
-# 03 JavaScript: Password Generator
+# Random Password Generator
 
-Create an application that generates a random password based on user-selected criteria. The app runs in the browser and features dynamically updated HTML and CSS powered by your JavaScript code. It has a clean and polished user interface and is responsive, which ensures that it adapts to multiple screen sizes.
+As a developer, I want to create a way to generate a completely random password via a password generator, using lowercase letters, uppercase letters, numbers and special characters. Prompts will be given to the user for their input on what characters they desire in their password as well as how long they would like their password to be.
 
-If you are unfamiliar with special characters, take a look at some [examples of special characters on the OWASP Foundation website](https://www.owasp.org/index.php/Password_special_characters).
+## Purpose
 
-## User Story
+Enhance security by creating a random and secure password
 
-```
-AS AN employee with access to sensitive data
-I WANT to randomly generate a password that meets certain criteria
-SO THAT I can create a strong password that provides greater security
-```
-
-## Acceptance Criteria
+## Intended Application Use
 
 ```
 GIVEN I need a new, secure password
@@ -34,15 +28,4 @@ THEN the password is either displayed in an alert or written to the page
 
 The following image demonstrates the application functionality:
 
-![An app window with the label Password Generator, an input field labeled Your Secure Password, and a Generate Password button.](./Assets/03-javascript-homework-demo.png)
-
-## Review
-
-You are required to submit the following for review:
-
-* The URL of the deployed application.
-
-* The URL of the GitHub repository. Give the repository a unique name and include a README describing the project.
-
-- - -
-© 2022 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
+![An app window with the label Password Generator, an input field labeled Your Secure Password, and a Generate Password button.](Screen%20Shot%202022-08-18%20at%201.03.51%20AM%20(2).png)

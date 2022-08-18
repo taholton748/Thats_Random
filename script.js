@@ -106,17 +106,20 @@ var special = [
 
 //Start function to generate password
 function generatePassword() {
-  
   //Prompt for password length requiring user input
-  passwordLength = prompt("How many characters do you desire between 8 and 128?");
+  passwordLength = prompt(
+    "How many characters do you desire between 8 and 128?"
+  );
   // Conditional for password length
-  if (passwordLength >= 8 && passwordLength <= 128)  {
+  if (passwordLength >= 8 && passwordLength <= 128) {
     console.log("Yayyy it works... password Length is: ", passwordLength);
   } else {
     alert("Must choose a number between 8 and 128 characters");
-    passwordLength = prompt("How many characters do you desire between 8 and 128?");
+    passwordLength = prompt(
+      "How many characters do you desire between 8 and 128?"
+    );
   }
-  
+
   // Prompts for confirmation
   var confirmLower = confirm("Do you want to include lowercase letters?");
   var confirmUpper = confirm("Do you want to include uppercase letters?");
@@ -127,7 +130,7 @@ function generatePassword() {
   if (confirmLower && confirmUpper && confirmNumber && confirmSpecial) {
     userChoices = userChoices.concat(lowerCase, upperCase, numbers, special);
   }
-  
+
   // Conditional for no lowercase letters
   else if (confirmUpper && confirmNumber && confirmSpecial) {
     userChoices = userChoices.concat(upperCase, numbers, special);
@@ -198,11 +201,12 @@ function generatePassword() {
     userChoices = userChoices.concat(special);
   }
 }
-  var randomPassword ='';
+var randomPassword = "";
 
-  for (var i = 0; i < passwordLength; i++) {
-    var randomPassword = userChoices[Math.floor(Math.random() * userChoices.length)];
-  }
+for (var i = 0; i < passwordLength; i++) {
+  var randomPassword =
+    userChoices[Math.floor(Math.random() * userChoices.length)];
+}
 // Create password and display in the page
 function writePassword() {
   var password = generatePassword();

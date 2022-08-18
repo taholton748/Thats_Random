@@ -29,3 +29,7 @@ THEN the password is either displayed in an alert or written to the page
 The following image demonstrates the application functionality:
 
 ![An app window with the label Password Generator, an input field labeled Your Secure Password, and a Generate Password button.](Screen%20Shot%202022-08-18%20at%201.03.51%20AM%20(2).png)
+
+## Live Application
+
+https://taholton748.github.io/Thats_Random/
